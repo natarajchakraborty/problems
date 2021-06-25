@@ -42,5 +42,9 @@ const fruits_into_baskets = function(fruits) {
     return Object.keys(maximum).reduce((a, b) =>  a + maximum[b], 0)
   };
 
-  console.log(fruits_into_baskets(['A', 'B', 'C', 'A', 'C'])); // 3, also same o/p:  console.log(longest_substring_with_k_distinct("ABCAC", 2));
+  console.log(fruits_into_baskets(['A', 'B', 'C', 'A', 'C'])); // 3,
   console.log(fruits_into_baskets(['A', 'B', 'C', 'B', 'B', 'C'])); // 5
+
+  /// Notes
+  /// this problem can be solved by console.log(longest_substring_with_k_distinct("ABCAC", 2));
+  /// also a similar problem, and same solution: Longest Substring with at most 2 distinct characters
