@@ -13,7 +13,11 @@ const longest_substring_with_k_distinct = function(str, k) {
         if(Object.keys(transientDistinctChars).length == k) {
             longest = window_e - window_s + 1;
           } else if(Object.keys(transientDistinctChars).length > k) {
-            delete transientDistinctChars[str[window_s]];
+            if(transientDistinctChars[str[window_s]] > 1) {
+              transientDistinctChars[str[window_s]] -= 1;
+            } else {
+              delete transientDistinctChars[str[window_s]];
+            }
             window_s++;
           }
           break;
