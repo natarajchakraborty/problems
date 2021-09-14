@@ -1,4 +1,4 @@
-const Heap = require('../collections/Heap'); //http://www.collectionsjs.com
+const Heap = require('../collections/Heap'); 
 
 const find_k_largest_numbers = function(nums, k) {
     const result = []

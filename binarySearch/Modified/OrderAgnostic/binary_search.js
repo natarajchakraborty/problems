@@ -19,7 +19,7 @@ const binary_search = function(arr, key) {
     return -1;
   };
 
-  
+  exports.binary_search = binary_search;
   // Note at the end of the search, if key is not found the start becomes the next 
   // smallest element which is bigger than key in the sorted array, and end becomes biggest number smaller than the key.
   // This property can be used to find next or prev problems.
